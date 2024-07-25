@@ -1,0 +1,142 @@
+@import "./reset.css";
+
+/* header */
+
+.header {
+  background-color: var(--primary);
+}
+.logo-white {
+  width: 80px;
+}
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+}
+.header-navbar {
+  display: flex;
+}
+.header-a {
+  font-size: 20px;
+  color: var(--secondary);
+  padding: 13px 32px;
+}
+.me-n8 {
+  margin-right: -32px;
+}
+
+.header-a:hover {
+  font-style: italic;
+}
+
+@media (max-width: 992px) {
+  .header-row {
+    max-width: calc(12 * 36px + 11 * 24px);
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-row {
+    max-width: calc(4 * 69px + 3 * 24px + 2 * 12px);
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: start;
+    padding-bottom: 0px;
+  }
+  .header-navbar {
+    flex-wrap: wrap;
+  }
+  .rwd-mt {
+    margin-top: 12px;
+  }
+  .header-li {
+    width: 50%;
+    border: var(--secondary) 1px solid;
+  }
+  .header-a {
+    font-size: 16px;
+    padding: 12px 55px;
+    text-align: center;
+  }
+  .me-n8 {
+    margin-right: 0;
+  }
+  .header-a:hover {
+    background-color: #6b0400;
+    font-style: normal;
+  }
+}
+
+/* footer */
+
+.footer {
+  background-color: var(--primary);
+}
+.footer-top {
+  padding-top: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.info-ul {
+  display: flex;
+}
+.info-a {
+  font-size: 16px;
+  color: var(--secondary);
+  margin-right: 48px;
+  padding: 12px 0;
+}
+.info-a:hover {
+  font-style: italic;
+}
+.info-icons {
+  display: flex;
+}
+.h3-a {
+  font-size: 36px;
+  color: var(--secondary);
+  display: flex;
+  align-items: center;
+}
+.material-icons {
+  font-size: 40px;
+  margin-right: 22px;
+}
+.mt-2 {
+  margin-top: 8px;
+}
+.mt-7 {
+  margin-top: 28px;
+}
+.footer-icon {
+  width: 48px;
+  margin-left: 32px;
+}
+.footer-bottom {
+  margin-top: 32px;
+  padding: 32px 0;
+  display: flex;
+  justify-content: end;
+  border-top: 1px var(--secondary) solid;
+}
+.footer-li {
+  color: var(--secondary);
+  font-size: 16px;
+}
+.me-auto {
+  margin-right: auto;
+}
+.ms-12 {
+  margin-left: 48px;
+}
+
+@media (max-width: 992px) {
+  .footer-top,
+  .footer-bottom {
+    max-width: calc(12 * 36px + 11 * 24px);
+    margin: 0 auto;
+  }
+}
